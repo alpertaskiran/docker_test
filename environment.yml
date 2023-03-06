@@ -25,5 +25,5 @@ dependencies:
   - tzdata=2022g=h191b570_0
   - wheel=0.38.4=pyhd8ed1ab_0
   - xz=5.2.6=h166bdaf_0
-  - flask=1.1.2 
+  - flask=2.1.0
 prefix: /home/shamecube/miniconda3/envs/u_docker_flask
