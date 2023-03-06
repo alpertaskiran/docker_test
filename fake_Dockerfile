@@ -1,0 +1,11 @@
+# Container for building the environment. We use mamba to speed up building the environment.
+FROM condaforge/mambaforge:latest as conda
+COPY . /app
+WORKDIR /app
+
+# Install the production environment to /env.
+COPY environment.yml .
+RUN mamba env create -f environment.yml
+
+EXPOSE 5000
+CMD python src/index.py
